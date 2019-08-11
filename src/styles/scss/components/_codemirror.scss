@@ -1,0 +1,27 @@
+.CodeMirror{
+    padding: 0;
+}
+.vue-codemirror{
+    .CodeMirror {
+        border: 1px solid #eee;
+        height: auto;
+        // overflow: auto hidden !important;
+        // min-height: 100px;
+    }
+    .CodeMirror-scroll{
+        // min-height: 100px;
+    }
+}
+@for $i from 0 through 40{
+    &.vue-codemirror.min-height-#{$i*10 + 50}{
+        .CodeMirror{
+            min-height: #{$i*10 + 100}px !important;
+        }
+        .CodeMirror-scroll{
+            min-height: #{$i*10 + 100}px !important;
+        }
+    }
+}
+.editor-toolbar.fullscreen , .CodeMirror-fullscreen{
+    z-index: 1001;
+}

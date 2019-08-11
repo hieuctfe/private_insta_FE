@@ -1,0 +1,83 @@
+.icon{
+    &-loading{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        background-color: transparent !important;
+        &:before{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            -webkit-mask: url(~@/assets/icons/spinner.svg) no-repeat center;
+            mask: url(~@/assets/icons/spinner.svg) no-repeat center;
+        }
+        &.bg-danger{
+            &:before{
+                background-color: $danger;
+            }
+        }
+        &.bg-success{
+            &:before{
+                background-color: $success;
+            }
+        }
+        &.bg-warning{
+            &:before{
+                background-color: $warning;
+            }
+        }
+        &.bg-info{
+            &:before{
+                background-color: $info;
+            }
+        }
+        &.bg-purple{
+            &:before{
+                background-color: $purple;
+            }
+        }
+        &.bg-primary{
+            &:before{
+                background-color: $primary;
+            }
+        }
+        &.small{
+            width: 24px;
+            height: 24px;
+            &:before{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &.big{
+            height: 40px;
+            width: 40px;
+            &:before{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &.large{
+            height: 60px;
+            width: 60px;
+            &:before{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+.btn{
+    .icon-loading{
+        width: 30px;
+        height: 18px;
+        &:before{
+            transform: translateY(-3px);
+        }
+    }
+}

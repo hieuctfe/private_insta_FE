@@ -1,0 +1,16 @@
+@for $i from 1 through 40{
+    .markdown-editor.min-height-#{$i*10 + 100} .CodeMirror, .markdown-editor.min-height-#{$i*10 + 100} .CodeMirror-scroll {
+        min-height: #{$i*10 + 100}px !important;
+    }
+}
+.markdown-editor{
+    .editor-statusbar{
+        display: none;
+    }
+    &.markdown-editor-auto {
+        .CodeMirror {
+            border: 1px solid #eee;
+            height: auto;
+        }
+    }
+}
