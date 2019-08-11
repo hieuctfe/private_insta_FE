@@ -1,6 +1,6 @@
 <template>
     <div class="app-toolbar">
-        <div class="app-toolbar-left">
+        <!-- <div class="app-toolbar-left">
             <nav>
                 <ol class="breadcrumb">
                     <li v-for="(item , index) in breadcrumb" :key="`index_${index}`" class="breadcrumb-item">
@@ -13,8 +13,8 @@
                     </li>
                 </ol>
             </nav>
-        </div>
-        <div class="app-toolbar-right">
+        </div> -->
+        <!-- <div class="app-toolbar-right">
             <div class="user">
                 <div class="btn-group user-dropdown">
                     <span class="user-dropdown-btn" data-toggle="dropdown" data-display="static">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <modal-change-password v-model="modal"></modal-change-password>
     </div>
 </template>

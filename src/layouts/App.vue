@@ -12,27 +12,27 @@
 </template>
 
 <script>
-	import VueExtendLayouts from 'vue-extend-layout'
-	import { mapActions, mapGetters } from 'vuex';
-	export default {
-		name: 'App',
-		components: {
-			VueExtendLayouts
-		},
-		computed: {
-			...mapGetters({
-				is_loading : 'getLoading'
-			})
-		},
-	}
+import VueExtendLayouts from "vue-extend-layout";
+import { mapActions, mapGetters } from "vuex";
+export default {
+  name: "App",
+  components: {
+    VueExtendLayouts
+  },
+  computed: {
+    ...mapGetters({
+      is_loading: "getLoading"
+    })
+  }
+};
 </script>
 <style lang="scss" scoped>
-	.app-loading{
-		height: 100vh;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: $purple;
-	}
+.app-loading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $purple;
+}
 </style>

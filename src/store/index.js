@@ -4,10 +4,7 @@ import cookie from 'js-cookie'
 import actions from './actions';
 import getters from './getters';
 import mutations from './mutations';
-import Question from './question'
-import Template from './template'
-import Competition from './competition'
-import User from './user'
+import Clone from './user'
 Vue.use(Vuex)
 let token_name = process.env.VUE_APP_TOKEN_NAME ? process.env.VUE_APP_TOKEN_NAME : 'token'
 let token = cookie.get(token_name)  
@@ -33,9 +30,6 @@ export default new Vuex.Store({
     getters,
     mutations,
     modules: {
-        Question,
-        Template,
-        Competition,
-        User
+        Clone
     }
 });

@@ -19,15 +19,15 @@
                         </li>
                     </ul>
                 </li>
-                <li :class="{ 'is-actived' : setActiveRouter('Question')}">
-                    <router-link :to="{ name : 'Question'}">
+                <li :class="{ 'is-actived' : setActiveRouter('CloneAccount')}">
+                    <router-link :to="{ name : 'CloneAccount'}">
                         <span class="menu-icon"><i class="material-icons">live_help</i></span>
-                        <span class="menu-text">Questions</span> 
+                        <span class="menu-text">Clone Account</span> 
                     </router-link>
                     <ul class="mobile-menu">
                         <li>
-                            <router-link :to="{ name : 'Question'}">
-                                <span class="menu-text">Questions</span> 
+                            <router-link :to="{ name : 'CloneAccount'}">
+                                <span class="menu-text">Clone Account</span> 
                             </router-link>
                         </li>
                     </ul>
@@ -67,45 +67,6 @@
                         </li>
                     </ul>
                 </li>
-                <li :class="{ 'is-actived' : setActiveRouter('UserGuest')}">
-                    <router-link :to="{ name : 'Guest'}">
-                        <span class="menu-icon"><i class="material-icons">mood</i></span>
-                        <span class="menu-text">Guests</span>
-                    </router-link>
-                    <ul class="mobile-menu">
-                        <li>
-                            <router-link :to="{ name : 'Guest'}">
-                                <span class="menu-text">Guests</span>
-                            </router-link>
-                        </li>
-                    </ul>
-                </li>
-                <li :class="{ 'is-actived' : setActiveRouter('User')}">
-                    <router-link :to="{ name : 'User'}">
-                        <span class="menu-icon"><i class="material-icons">people</i></span>
-                        <span class="menu-text">Users</span>
-                    </router-link>
-                    <ul class="mobile-menu">
-                        <li>
-                            <router-link :to="{ name : 'User'}">
-                                <span class="menu-text">Users</span>
-                            </router-link>
-                        </li>
-                    </ul>
-                </li>
-                <li :class="{ 'is-actived' : setActiveRouter('Template')}">
-                    <router-link :to="{ name : 'Template'}">
-                        <span class="menu-icon"><i class="material-icons">bookmarks</i></span>
-                        <span class="menu-text">Templates</span>
-                    </router-link>
-                    <ul class="mobile-menu">
-                        <li>
-                            <router-link :to="{ name : 'Template'}">
-                                <span class="menu-text">Templates</span>
-                            </router-link>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </div>
@@ -127,7 +88,7 @@ export default {
                 'User' : ['User' ,'CreateUser','EditUser'],
                 'UserGuest' : ['Guest' ,'CreateGuest','EditGuest'],
                 'Template' : ['Template' , 'CreateTemplate' ,'EditTemplate'],
-                'Question' : ['Question' , 'CreateQuestion' , 'EditQuestion'],
+                'CloneAccount' : ['CloneAccount'],
                 'Dashboard' : ['Admin'],
             }
         }
